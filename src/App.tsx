@@ -8,7 +8,7 @@ import Packages from "./pages/Packages";
 function App() {
 	// Set title of page
 	useEffect(() => {
-		document.title = "Home";
+		document.title = "ACME Site";
 	}, []);
 
 	return (
@@ -19,7 +19,6 @@ function App() {
 					<Route path="/" element={<Layout />}>
 						<Route index element={<Home />} />
 						<Route path="/packages" element={<Packages />} />
-						<Route path="/help" element={<Help />} />
 					</Route>
 				</Routes>
 			</div>
