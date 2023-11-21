@@ -1,0 +1,28 @@
+{
+  "Links": [
+    {
+      "name": "Home",
+      "route": "/"
+    },
+    {
+      "name": "Login",
+      "route": "/login"
+    },
+    {
+      "name": "Packages",
+      "route": "/packages"
+    },
+    {
+      "name": "Dashboard",
+      "route": "/dashboard"
+    },
+    {
+      "name": "Admin",
+      "route": "/admin"
+    },
+    {
+      "name": "Help",
+      "route": "/help"
+    }
+  ]
+}
