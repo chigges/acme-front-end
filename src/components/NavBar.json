@@ -13,6 +13,10 @@
       "route": "/packages"
     },
     {
+      "name": "API",
+      "route": "/api"
+    },
+    {
       "name": "Dashboard",
       "route": "/dashboard"
     },

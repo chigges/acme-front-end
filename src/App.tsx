@@ -5,6 +5,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Packages from "./pages/Packages";
 import Login from "./pages/Login";
+import Api from "./pages/Api";
 
 function App() {
   // Set title of page
@@ -24,6 +25,7 @@ function App() {
                 path="/login"
                 element={<Login onLogin={() => console.log("logged in!")} />}
               />
+              <Route path="/api" element={<Api />} />
             </Route>
           </Routes>
         </div>
