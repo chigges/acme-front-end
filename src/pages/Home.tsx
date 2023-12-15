@@ -82,7 +82,6 @@ function Home() {
 			</div>
 		</>
 	);
->>>>>>> origin/testing
 }
 
 export default Home;
