@@ -6,9 +6,8 @@ interface Props {
 	logoImg?: string | null;
 }
 
-function NavBar({ showLinks=true, logoImg = null }: Props) {
-	return ( 
-	
+function NavBar({ showLinks = true, logoImg = null }: Props) {
+	return (
 		<nav
 			className="navbar cat-bg-primary navbar-expand-lg"
 			style={{ top: 0, height: "5rem" }}
@@ -24,8 +23,17 @@ function NavBar({ showLinks=true, logoImg = null }: Props) {
 					{showLinks && (
 						<ul className="flex gap-x-10 items-center justify-start">
 							{NavLinks.Links.map((link, index) => (
-								<li className="navLink nav-item" key={index} aria-label={`Link to ${index}`}>
-									<NavLink tabIndex={0} className="nav-link" to={link.route} aria-label={`Link to ${link}`}>
+								<li
+									className="navLink nav-item"
+									key={index}
+									aria-label={`Link to ${index}`}
+								>
+									<NavLink
+										tabIndex={0}
+										className="nav-link text-blue-300"
+										to={link.route}
+										aria-label={`Link to ${link}`}
+									>
 										{link.name}
 									</NavLink>
 								</li>
