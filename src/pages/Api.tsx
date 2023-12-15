@@ -2,7 +2,7 @@ import { useState } from "react";
 import FileUpload from "../components/FileUpload.tsx";
 
 function Api() {
-	const url = "https://s9w5fyhoi9.execute-api.us-east-2.amazonaws.com/staging/packages"; //'http://localhost:5173/'; // TODO: Set the correct endpoint
+	const url = "https://s9w5fyhoi9.execute-api.us-east-2.amazonaws.com/staging/"; //'http://localhost:5173/'; // TODO: Set the correct endpoint
 	const [path, setPath] = useState("");
 	const [requestType, setRequestType] = useState("get");
 	const [responseData, setResponseData] = useState("");
@@ -69,6 +69,8 @@ function Api() {
 						box.
 						<br />
 						And then click the Send button to cast the request!
+						<br />
+						Example: POST packages
 					</p>
 
 					<div className="API-form">
