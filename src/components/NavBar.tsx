@@ -26,13 +26,13 @@ function NavBar({ showLinks = true, logoImg = null }: Props) {
 								<li
 									className="navLink nav-item"
 									key={index}
-									aria-label={`Link to ${index}`}
+									aria-label={`Link to ${link.name}`}
 								>
 									<NavLink
 										tabIndex={0}
 										className="nav-link text-blue-300"
 										to={link.route}
-										aria-label={`Link to ${link}`}
+										aria-label={`Link to ${link.name}`}
 									>
 										{link.name}
 									</NavLink>
