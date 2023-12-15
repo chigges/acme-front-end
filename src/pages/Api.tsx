@@ -80,6 +80,7 @@ function Api() {
 						>
 							<div className="form-group">
 								<select
+									aria-label={"request-type"}
 									className={"bg-gray-900 p-2 rounded-md"}
 									name={"request-type"}
 									id={"request-type"}

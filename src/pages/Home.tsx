@@ -16,9 +16,9 @@ function Home() {
 					</h1>
 					<p>This system is meant to be the front end for ACME package repository.</p>
 
-					<h2 className={`text-3xl m-3 ${text_color2}`}>
+					<h3 className={`text-3xl m-3 ${text_color2}`}>
 						Discover Insights and Enhance Your Projects with Ease
-					</h2>
+					</h3>
 
 					<p>
 						At ACME File Analyzer, we empower developers, project managers, and code
