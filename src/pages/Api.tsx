@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import FileUpload from "../components/FileUpload.tsx";
 
 function Api() {
-    const url = 'http://localhost:5173/';
+    const url = "https://s9w5fyhoi9.execute-api.us-east-2.amazonaws.com/staging/packages"; //'http://localhost:5173/'; // TODO: Set the correct endpoint
     const [path, setPath] = useState("");
     const [requestType, setRequestType] = useState("get");
     const [responseData, setResponseData] = useState("");
@@ -56,6 +57,10 @@ function Api() {
             <div id="image-backing" className="image-backing" style={{ minHeight: "100vh" }}>
                 <section>
                     <h1 className="text-4xl">API Frontend</h1>
+                </section>
+                <section className={"mt-10"}>
+                    <h2 className={"text-xl font-bold"}>Use the API Directly!</h2>
+                    <p>Select a request type. Type what you want to come after the url in the text box.<br />And then click the Send button to cast the request!</p>
 
                     <div className="API-form">
                         <form onSubmit={handleRequest} className={"flex gap-2 justify-center items-center"}>
@@ -80,7 +85,7 @@ function Api() {
                                     value={path}
                                     onChange={(e) => setPath(e.target.value)}
                                     placeholder="Enter Endpoint Path"
-                                    className="my-2 bg-gray-500"
+                                    className="my-2 bg-gray-900 h-8 "
                                 />
                             </div>
                             <button
@@ -101,6 +106,10 @@ function Api() {
                             <pre>{JSON.stringify(responseData, null, 2)}</pre>
                         </div>
                     )}
+                </section>
+                <section className={"mt-20"}>
+                    <h2 className={"text-xl font-bold"}>Upload your .zip file!</h2>
+                    <FileUpload />
                 </section>
             </div>
         </>
